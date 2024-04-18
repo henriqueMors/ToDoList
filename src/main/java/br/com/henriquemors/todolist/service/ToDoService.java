@@ -17,10 +17,11 @@ public class ToDoService {
     }
 
     public List<ToDo> create(ToDo ToDo) {
-        ToDoRepository.save(entity:null); //11:28
+        ToDoRepository.save(ToDo);
 
     }
     public List<ToDo> list() {
+        ToDoRepository.findAll();
 
     }
     public List<ToDo> delete() {
