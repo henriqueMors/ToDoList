@@ -19,12 +19,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 @RequestMapping("/ToDo")
 
-public class todoController {
+public class ToDoController {
     
     private ToDoService ToDoService;
     
 
-    public todoController(br.com.henriquemors.todolist.service.ToDoService toDoService) {
+    public ToDoController(br.com.henriquemors.todolist.service.ToDoService toDoService) {
         this.ToDoService = toDoService;
     }
 
