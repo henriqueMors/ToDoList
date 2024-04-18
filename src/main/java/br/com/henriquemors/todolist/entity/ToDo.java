@@ -7,16 +7,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table (name = "ToDos")
-
+@Table(name = "todos")
 public class ToDo {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
     private String nome;
-    private String description;
+    private String descricao;
     private boolean realizado;
     private int prioridade;
     public Long getId() {
@@ -31,11 +28,11 @@ public class ToDo {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getDescription() {
-        return description;
+    public String getDescricao() {
+        return descricao;
     }
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
     public boolean isRealizado() {
         return realizado;
